@@ -104,25 +104,33 @@ label{
         background: #1C445F;
     }
 
- .navigation  .sub-menu-list > li > a {
-            color: #fff;
-            font-size: 13px;
-            display: block;
-            padding: 10px 5px 10px 50px;
-            -moz-transition: all 0.2s ease-out 0s;
-            -webkit-transition: all 0.2s ease-out 0s;
-            transition: all 0.2s ease-out 0s;
-        }
-
- .navigation:hover .sub-menu-list {
+    .navigation .sub-menu-list > li > a {
+        color: #fff;
+        font-size: 13px;
         display: block;
+        padding: 10px 5px 10px 50px;
+        -moz-transition: all 0.2s ease-out 0s;
+        -webkit-transition: all 0.2s ease-out 0s;
+        transition: all 0.2s ease-out 0s;
+        
     }
+
+    .navigation:hover .sub-menu-list {
+        display: block;
+        -moz-transition: all 0.2s ease-out 0s;
+        -webkit-transition: all 0.2s ease-out 0s;
+        transition: all 0.2s ease-out 0s;
+    }
+ 
+
     .navigation .sub-menu-list > li > a:hover,
     .navigation .sub-menu-list > li > a:active,
     .navigation .sub-menu-list > li > a:focus {
-        text-decoration: none;
-        color: #fff;
-        background: #3493a8;
+        padding: 10px 5px 10px 50px;
+        color: lightseagreen;
+        -moz-transition: all 0.2s ease-out 0s;
+        -webkit-transition: all 0.2s ease-out 0s;
+        transition: all 0.2s ease-out 0s;
     }
 
 
@@ -222,30 +230,30 @@ i.setting {
 }
 .wrapper-dropdown-2 .dropdown {
   /* Size & position */
-    position: absolute;
-    top: 65px;
-    left: 0px;
-    right: 0px;
-	border-radius:5px;
-	-webkit-border-radius:5px;
-	-moz-border-radius:5px;
-	-o-border-radius:5px;
-    /* Styles */
-    background:#fff;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -ms-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-    list-style: none;
-    z-index:1;
-    /* Hiding */
-    opacity: 0;
-    pointer-events: none;
-	 width: 74%;
-  padding: 0.5em 0;
-  margin-left: 15%;
-}
+        position: absolute;
+        top: 65px;
+        left: 0px;
+        right: 0px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -o-border-radius: 5px;
+        /* Styles */
+        background: #fff;
+        -webkit-transition: all 0.3s ease-out;
+        -moz-transition: all 0.3s ease-out;
+        -ms-transition: all 0.3s ease-out;
+        -o-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+        list-style: none;
+        z-index: 1;
+        /* Hiding */
+        opacity: 0;
+        pointer-events: none;
+        width: 74%;
+        padding: 0.5em 0;
+        margin-left: 15%;
+    }
 .wrapper-dropdown-2 .dropdown li:last-child{
 	border-bottom:none;
 }
