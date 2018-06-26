@@ -734,6 +734,12 @@ i.dollar {
 	background: url('../images/img-sprite.png') no-repeat -435px -35px;
 	display: inline-block;
 }
+i.glass {
+	width: 57px;
+	height: 60px;
+	background: url('../images/img-sprite.png') no-repeat -265px -35px;
+	display: inline-block;
+}
 .sales {
 	width:23.5%;
 	margin-right:2%;
