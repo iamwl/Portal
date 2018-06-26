@@ -700,7 +700,8 @@ p.home a {
 	float: left;
 }
 .list_of_members {
-	margin:2em 0;
+	margin:2em 50px;
+    
 }
 .visitors {
 	width: 23.5%;
@@ -740,13 +741,14 @@ i.glass {
 	background: url('../images/img-sprite.png') no-repeat -265px -35px;
 	display: inline-block;
 }
-.sales {
-	width:23.5%;
-	margin-right:2%;
-	background:#16a085;
-	padding:1.8em 1.5em;
-	float:left;
-	  cursor: pointer;
+.my-requests {
+    width: 23.5%;
+    margin-left: 10%;
+    margin-right: 15%;
+    background: #16a085;
+    padding: 1.8em 1.5em;
+    float: left;
+    cursor: pointer;
 }
 .orders {
 	width:23.5%;
@@ -756,12 +758,13 @@ i.glass {
 	float:left;
 	  cursor: pointer;
 }
-.new-users {
-	width:23.5%;
+.problems-reported {
+	width:26.5%;
 	background:#e05d6f;
 	padding:1.8em 01.5em;
 	float:left;
-	margin-right:2%;
+	margin-left: 10%;
+    margin-right: 15%;
 	  cursor: pointer;
 }
 .icon {
@@ -771,21 +774,21 @@ i.glass {
 .icon-text {
 	float:left;
 }
-.visitors h3,.sales h3,.new-users h3,.orders h3 {
-	color:#fff;
-	text-align:center;
-	font-size:2.6em;
-	font-weight:500;
-	letter-spacing:1px;
+.visitors h3, .my-requests h3, .problems-reported h3, .orders h3 {
+    color: #fff;
+    text-align: center;
+    font-size: 2.6em;
+    font-weight: 500;
+    letter-spacing: 1px;
 }
-.visitors p,.sales p,.new-users p,.orders p {
-	float:left;
-	color:#fff;
-	font-size:1.3em;
-	font-weight:300;
+.visitors p, .my-requests p, .problems-reported p, .orders p {
+    float: left;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: 300;
 }
-.visitors a,.sales a,.users a {
-	float:right;
+.visitors a, .my-requests a, .users a {
+    float: right;
 }
 i.go {
 	width:25px;
@@ -1048,16 +1051,39 @@ div#vmap {
 	margin-bottom:1.5em;
 	  background-color: #ABB1FC;
 }
+
 .to-do {
 	
 	background:#fff;
 	padding-bottom: 2.7em;
-	float:right;
-	width:30%;
+	float:left;
+	width:95%;
 	margin:1em 2.5% 0;
 	position:relative;
 	  border: 1px solid #eaeaea;
 }
+
+.problems h3 {
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 600;
+    padding: 0.7em 0;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 1.5em;
+    background-color: #6ae8a7;
+}
+
+.problems {
+    background: #fff;
+    padding-bottom: 2.7em;
+    float: left;
+    width: 95%;
+    margin: 1em 2.5% 0;
+    position: relative;
+    border: 1px solid #eaeaea;
+}
+
 .checkbox {
 	margin-bottom: 4px;
 	padding-left: 30px;
@@ -1409,9 +1435,9 @@ button#focus-single,button#focus-multiple,button#focus-coords,button#focus-init 
 	span.blue {		
 		top: -11px;
 	}
-	.sales,.new-users,.orders {
-		padding: 1.8em 1.2em;
-	}
+    .my-requests, .problems-reported, .orders {
+        padding: 1.8em 1.2em;
+    }
 	.site-report {
 		min-height: 520px;
 	}
@@ -1457,9 +1483,9 @@ button#focus-single,button#focus-multiple,button#focus-coords,button#focus-init 
 	.member p a {
 		font-size: 1.35em;
 	}
-	.visitors p, .sales p, .new-users p, .orders p {
-		font-size: 1.1em;
-	}
+    .visitors p, .my-requests p, .problems-reported p, .orders p {
+        font-size: 1.1em;
+    }
 	.view ul li {
 		margin: 0 1.1em;
 	}
@@ -1597,22 +1623,22 @@ button#focus-single,button#focus-multiple,button#focus-coords,button#focus-init 
 		padding-left: 2em;
 		margin-bottom: 0.8em;
 	}
-	.visitors h4, .sales h4, .users h4 {
-		font-size: 1.4em;
-	}
-	.visitors h3, .sales h3, .users h3 {
-		font-size: 2.75em;
-	}
-	.visitors p, .sales p, .new-users p, .orders p {
-		font-size: 1.05em;
-		margin-top:0;
-	}
+    .visitors h4, .my-requests h4, .users h4 {
+        font-size: 1.4em;
+    }
+    .visitors h3, .my-requests h3, .users h3 {
+        font-size: 2.75em;
+    }
+    .visitors p, .my-requests p, .problems-reported p, .orders p {
+        font-size: 1.05em;
+        margin-top: 0;
+    }
 	.list_of_members, .total-world, .calenders {
 		margin: 2em 0;
 	}
-	.sales, .new-users, .orders {
-		padding: 1.5em 1em;
-	}
+    .my-requests, .problems-reported, .orders {
+        padding: 1.5em 1em;
+    }
 	.visitors {
 		padding: 1.5em 1em;
 	}
@@ -1770,9 +1796,9 @@ button#focus-single,button#focus-multiple,button#focus-coords,button#focus-init 
 		padding: 2.9em 0.5em 0;
 		min-height: 105px;
 	}
-	.visitors h3, .sales h3, .new-users h3, .orders h3 {
-		font-size: 2.2em;	
-	}
+    .visitors h3, .my-requests h3, .problems-reported h3, .orders h3 {
+        font-size: 2.2em;
+    }
 	.wrapper-dropdown-2 .dropdown {
 		left: -48px;
 	}
@@ -1858,9 +1884,9 @@ button#focus-single,button#focus-multiple,button#focus-coords,button#focus-init 
 	.search2 input[type="submit"] {
 		top: 12px;
 	}
-	.sales, .new-users, .orders {
-		padding: 1.2em 0.8em;
-	}
+    .my-requests, .problems-reported, .orders {
+        padding: 1.2em 0.8em;
+    }
 	.visitors {
 		padding: 1.2em 1em;
 	}
@@ -1910,15 +1936,15 @@ button#focus-single,button#focus-multiple,button#focus-coords,button#focus-init 
 	p.home a {
 		width: 8%;
 	}
-	.visitors h3, .sales h3, .users h3 {
-		font-size: 2.2em;
-	}
-	.visitors h4, .sales h4, .users h4 {
-		font-size: 1.1em;
-	}
-	.visitors p, .sales p, .users p {
-		font-size: 0.95em;
-	}
+    .visitors h3, .my-requests h3, .users h3 {
+        font-size: 2.2em;
+    }
+    .visitors h4, .my-requests h4, .users h4 {
+        font-size: 1.1em;
+    }
+    .visitors p, .my-requests p, .users p {
+        font-size: 0.95em;
+    }
 	.total-sale {
 		width: 100%;
 		margin-right: 0;
@@ -1927,18 +1953,18 @@ button#focus-single,button#focus-multiple,button#focus-coords,button#focus-init 
 	.user-trends{
 		width:100%;
 	}
-	.visitors h3, .sales h3, .new-users h3, .orders h3 {
-		font-size: 2em;
-	}
-	.sales {
-		width: 24.5%;
-		margin-right: 1%;
-	}
+    .visitors h3, .my-requests h3, .problems-reported h3, .orders h3 {
+        font-size: 2em;
+    }
+    .my-requests {
+        width: 24.5%;
+        margin-right: 1%;
+    }
 	.orders {
 		width: 24.5%;
 		margin-right: 1%;
 	}
-	.new-users {
+	.problems-reported {
 		width: 24.5%;
 		margin-right: 1%;
 	}
@@ -1949,9 +1975,9 @@ button#focus-single,button#focus-multiple,button#focus-coords,button#focus-init 
 		font-size: 1.3em;
 		padding: 1em 0;
 	}
-	.sales, .new-users, .orders {
-		padding: 1.2em 0.3em;
-	}
+    .my-requests, .problems-reported, .orders {
+        padding: 1.2em 0.3em;
+    }
 	.men-grid h6 a {
 		font-size: 1.2em;
 	}
@@ -2151,24 +2177,24 @@ button#focus-single,button#focus-multiple,button#focus-coords,button#focus-init 
 	.footer {
 		padding: 1.5em 0;
 	}
-	.sales,.orders {
-		padding: 1em 0.5em 0.7em 0.5em;
-		width:48%;
-		margin-top:2%;
-	}
-	.new-users ,.visitors {
+    .my-requests, .orders {
+        padding: 1em 0.5em 0.7em 0.5em;
+        width: 48%;
+        margin-top: 2%;
+    }
+	.problems-reported ,.visitors {
 		width:48%;
 		margin-left:1%;
 		margin-right:0;
 		padding: 1em 0.5em 0.7em 0.5em;
 		margin-top:2%;
 	}
-	.visitors h3, .sales h3, .users h3 {
-		font-size: 2em;
-	}
-	.visitors p, .sales p, .users p {
-		font-size: 0.875em;
-	}
+        .visitors h3, .my-requests h3, .users h3 {
+            font-size: 2em;
+        }
+        .visitors p, .my-requests p, .users p {
+            font-size: 0.875em;
+        }
 	.users {
 		width: 32.333%;
 	}
@@ -2219,10 +2245,10 @@ button#focus-single,button#focus-multiple,button#focus-coords,button#focus-init 
 		margin-top: -1.1px;
 		width: 19%;
 	}
-	.visitors, .sales,.users{
-		width:100%;
-		margin-right:0;
-	}
+    .visitors, .my-requests, .users {
+        width: 100%;
+        margin-right: 0;
+    }
 	.copyright p {
 		font-size: 0.875em;
 		line-height: 1.7em;	
@@ -2300,18 +2326,18 @@ button#focus-single,button#focus-multiple,button#focus-coords,button#focus-init 
 		padding: 4px 5px;
 		margin-top: 5px;
 	}
-	.new-users, .visitors {
+	.problems-reported, .visitors {
 		width: 100%;
 		margin-left: 0;
 		margin-right: 0;
 		padding: 1em 0.5em 0.7em 3.5em;
 		margin-top: 2%;
 	}
-	.sales, .orders {
-		padding: 1em 0.5em 0.7em 3.5em;
-		width: 100%;
-		margin-top: 2%;
-	}
+    .my-requests, .orders {
+        padding: 1em 0.5em 0.7em 3.5em;
+        width: 100%;
+        margin-top: 2%;
+    }
 	.member, .search, .view {
 		min-height: 85px;
 	}
